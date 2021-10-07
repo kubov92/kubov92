@@ -1,0 +1,11 @@
+from selenium import webdriver
+import time
+
+driver = webdriver.Chrome('/Users/kubov92/Downloads/Learning/WD-scripts/chromedriver')
+driver.get('https://auto.ru/')
+free_ad_button = driver.find_element_by_xpath("//span[text()='Разместить бесплатно']").click()
+time.sleep(5)
+
+assert "Размещение объявления" in driver.title
+
+driver.close()
