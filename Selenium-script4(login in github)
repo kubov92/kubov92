@@ -1,0 +1,17 @@
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+import time
+
+login = "XXXX" # remove XXXX and enter real github username
+password = "XXXX" # remove XXXX and enter real github password
+
+driver = webdriver.Chrome('/Users/kubov92/Downloads/Learning/WD-scripts/chromedriver')
+
+driver.get("https://github.com/login")
+driver.find_element_by_id("login_field").send_keys(login)
+driver.find_element_by_id("password").send_keys(password)
+driver.find_element_by_name("commit").click()
+time.sleep(5)
+assert "kubov92" in driver.page_source #enter u github nickname
+
+driver.close()
