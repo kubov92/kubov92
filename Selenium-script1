@@ -1,0 +1,9 @@
+from selenium import webdriver
+import time
+
+driver = webdriver.Chrome('/Users/kubov92/Downloads/Learning/WD-scripts/chromedriver')
+driver.get('https://auto.ru/')
+select_kia = driver.find_element_by_xpath("//a[@title='Kia']").click()
+time.sleep(5)
+
+assert driver.current_url == 'https://auto.ru/sankt-peterburg/cars/kia/all/'
