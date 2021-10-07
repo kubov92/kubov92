@@ -1,0 +1,11 @@
+from selenium import webdriver
+import time
+
+driver = webdriver.Chrome('/Users/kubov92/Downloads/Learning/WD-scripts/chromedriver')
+driver.set_window_size(375, 812)
+driver.get('https://auto.ru/')
+time.sleep(5)
+
+driver.save_screenshot('iphoneX-window_size.png')
+
+driver.close()
