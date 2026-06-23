@@ -1,6 +1,7 @@
-- 👋 Hi, I’m @kubov92
-- 👀 I’m interested in python
-- 🌱 I’m currently learning python web automation
-- 📫 How to reach me kubov.work@gmail.com
+- 👋 # Hey, I'm Mitia
+QA Engineer writing **automated tests** in Python.
+Focused on building reliable test automation frameworks.
+
+📬 kubov.work@gmail.com OR 📲 tg: kubov92
 
 
